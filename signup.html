@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup – MERN LMS</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Create Your Account</h2>
+    <br>
+
+    <form>
+
+      <label>Name</label>
+      <input type="text" required>
+
+      <label>Age</label>
+      <input type="number" min="1" max="100" required>
+
+    <label class="label">Gender :</label>
+    <label class="gender-option">
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    </label>
+
+      <label>Email</label>
+      <input type="email" required>
+
+      <label>Date of Birth</label>
+      <input type="date" required>
+
+      <label class="label">Choose Course :</label>
+<select class="input-box">
+    <option disabled selected>-- Select a Course --</option>
+    <option>MERN Full Stack</option>
+    <option>MEAN Full Stack</option>
+    <option>Python Full Stack</option>
+    <option>Java Full Stack</option>
+</select>
+
+      <label>Password</label>
+      <input type="password" required>
+
+      <button class="btn">Signup</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
