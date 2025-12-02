@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Personal Details Form</h1>
+
+    <form>
+
+        <!-- 1. NAME -->
+        <label>Name :</label>
+        <input type="text" required>
+        <br><br>
+
+        <!-- 2. AGE -->
+        <label>Age :</label>
+        <input type="number" min="1" max="120" required>
+        <br><br>
+
+        <!-- 3. EMAIL -->
+        <label>Email :</label>
+        <input type="email" required>
+        <br><br>
+
+        <!-- 4. PASSWORD -->
+        <label>Password :</label>
+        <div class="password-box">
+            <input type="password" id="password" required>
+            <span id="eyeIcon" class="toggle-eye" onclick="togglePassword()"></span>
+        </div>
+        <br><br>
+
+        <!-- 5. GENDER -->
+        <label>Gender :</label><br>
+        <input type="radio" name="gender" value="Male"><label> Male</label><br>
+        <input type="radio" name="gender" value="Female"><label> Female</label>
+        <br><br>
+
+        <!-- 6. HOBBIES -->
+        <label>Hobbies :</label><br>
+        <input type="checkbox" value="Reading"><label> Reading</label><br>
+        <input type="checkbox" value="Sports"><label> Sports</label><br>
+        <input type="checkbox" value="Music"><label> Music</label><br>
+        <input type="checkbox" value="Travel"><label> Travel</label>
+        <br><br>
+
+        <!-- 7. WEBSITE -->
+        <label>Website :</label>
+        <input type="url" placeholder="https://example.com">
+        <br><br>
+
+        <!-- 8. DATE -->
+        <label>Date :</label>
+        <input type="date">
+        <br><br>
+
+        <!-- 9. TIME -->
+        <label>Time :</label>
+        <input type="time">
+        <br><br>
+
+        <!-- 10. DATE & TIME -->
+        <label>Date & Time :</label>
+        <input type="datetime-local">
+        <br><br>
+
+        <!-- 11. MONTH -->
+        <label>Month :</label>
+        <input type="month">
+        <br><br>
+
+        <!-- 12. WEEK -->
+        <label>Week :</label>
+        <input type="week">
+        <br><br>
+
+        <!-- 13. COURSE -->
+        <label>Course :</label>
+        <select>
+            <option value="">-- Select Course --</option>
+            <option>MERN Full Stack</option>
+            <option>Python Programming</option>
+            <option>C++ Advanced</option>
+            <option>Data Structures</option>
+            <option>Artificial Intelligence</option>
+        </select>
+        <br><br>
+
+        <!-- 14. UPLOAD FILE -->
+        <label>Upload File :</label>
+        <input type="file">
+        <br><br>
+
+        <!-- 15. MESSAGE -->
+        <label>Message :</label><br>
+        <textarea rows="5" cols="40"></textarea>
+        <br><br>
+
+        <!-- 16. BUTTONS -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
